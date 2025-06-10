@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hochos Los Licenciados</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="assets/js/aos.css">
+  <!-- Swiper  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+  <style>
+    body {
+      background-color: #212121;
+      color: #fff;
+      font-family: 'Fredoka One', sans-serif;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #e53935;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    header p {
+      margin: 0;
+    }
+    .promo-card {
+      background-color: #ffeb3b;
+      color: #000;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+    }
+    .precio {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nota {
+      text-align: center;
+      font-style: italic;
+      margin-top: 2rem;
+      color: #ccc;
+    }
+    .btn-wsp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 0 10px #000;
+    }
+    
+    
+    .swiper {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .swiper-slide {
+    width: 250px;
+  }
+  .swiper-wrapper {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+
+  .card {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-body {
+  padding: 1rem;
+}
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+</style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <h1>🌭 Hochos Los Licenciados</h1>
+    <p>📍 Calle San Francisco #400, Cadereyta Jiménez, N.L.</p>
+    <p>📞 828 125 1704</p>
+  </header>
+
+  <main class="container py-4">
+    <section id="promociones" data-aos="fade-up">
+      <h3 class="text-center mb-4">💥 Combos y Promociones 💥</h3>
+      <div class="promo-card" data-aos="zoom-in" data-aos-delay="100">
+        <p>🍔 1 Hamburguesa sencilla de res + 🌭 1 Hotdog de pavo</p>
+        <p class="precio">$150 MXN</p>
+      </div>
+      <div class="promo-card" data-aos="zoom-in" data-aos-delay="150">
+        <p>🍔 1 Hamburguesa de pollo crugi + 🌭 1 Hotdog de pavo</p>
+        <p class="precio">$160 MXN</p>
+      </div>
+      <div class="promo-card" data-aos="zoom-in" data-aos-delay="200">
+        <p>🍔🍔 2 Hamburguesas sencillas de res + 🌭 1 Hotdog de pavo</p>
+        <p class="precio">$270 MXN</p>
+      </div>
+      <div class="promo-card" data-aos="zoom-in" data-aos-delay="250">
+        <p>🍔🍔 2 Hamburguesas de pollo crugi + 🌭 1 Hotdog de pavo</p>
+        <p class="precio">$280 MXN</p>
+      </div>
+      <div class="promo-card" data-aos="zoom-in" data-aos-delay="300">
+        <p>🍔🍔🍔 3 Hamburguesas sencillas de res + 🌭 1 Hotdog de pavo</p>
+        <p class="precio">$360 MXN</p>
+      </div>
+      <div class="promo-card" data-aos="zoom-in" data-aos-delay="350">
+        <p>🍔🍔🍔 3 Hamburguesas de pollo + 🌭 1 Hotdog de pavo</p>
+        <p class="precio">$390 MXN</p>
+      </div>
+      <div class="promo-card" data-aos="zoom-in" data-aos-delay="400">
+        <p>🌭🌭🌭🌭🌭 5 Hotdogs de pavo</p>
+        <p class="precio">$200 MXN</p>
+      </div>
+      <div class="promo-card" data-aos="zoom-in" data-aos-delay="450">
+        <p>🌮 5 Tacos de carne asada + 🧀 2 tostadas con queso + 🍟 papas + complementos</p>
+        <p class="precio">$145 MXN</p>
+      </div>
+      <p class="nota">😎 Todos los combos incluyen sus ingredientes completos 😎</p>
+    </section>
+
+    <section id="combos-especiales" class="my-5" data-aos="fade-up">
+      <h2 class="text-center mb-4">🔥 Combos Especiales 🔥</h2>
+      <div id="carouselCombos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/combo1.png" class="d-block w-100" alt="Combo 1">
+            <div class="carousel-caption d-block" style="background-color: rgba(0,0,0,0.6); padding: 10px; border-radius: 8px;">
+              <h5>Combo 1</h5>
+              <p>2 Hamburguesas de pollo + 1 Hotdog de salchicha de pavo – $280 MXN</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/comobo2.png" class="d-block w-100" alt="Combo 2">
+            <div class="carousel-caption d-block"  style="background-color: rgba(0,0,0,0.6); padding: 10px; border-radius: 8px;">
+              <h5>Combo 2</h5>
+              <p>2 Hamburguesas de res + 1 Hotdog de salchicha de pavo – $270 MXN</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/combo3.png" class="d-block w-100" alt="Combo 3">
+            <div class="carousel-caption d-block"  style="background-color: rgba(0,0,0,0.6); padding: 10px; border-radius: 8px;">
+                <h5>Combo 3</h5>
+                <p>2 Hochos para asar + papas preparadas – $145 MXN</p>
+              </div>              
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/combo 4.png" class="d-block w-100 img-fluid" style="max-height: 800px; object-fit: cover;" alt="Combo 4">
+            <div class="carousel-caption d-block"  style="background-color: rgba(0,0,0,0.6); padding: 10px; border-radius: 8px;">
+              <h5>Combo 4</h5>
+              <p>1 orden de tacos + 2 tostadas con queso + papas – $145 MXN</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCombos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCombos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="productos" class="my-5 container" data-aos="fade-up">
+        <h2 class="text-center mb-4">🍔 Hamburguesas</h2>
+      
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+      
+            <div class="swiper-slide">
+              <div class="card text-dark">
+                <img src="assets/img/hambursa de pollo.jpg" class="card-img-top" alt="Hamburguesa 1">
+                <div class="card-body">
+                  <h5 class="card-title">Hamburguesa 1</h5>
+                  <p class="card-text">$70 MXN</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="swiper-slide">
+              <div class="card text-dark">
+                <img src="assets/img/hambursa3.jpg" class="card-img-top" alt="Hamburguesa 2">
+                <div class="card-body">
+                  <h5 class="card-title">Hamburguesa 2</h5>
+                  <p class="card-text">$80 MXN</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card text-dark">
+                  <img src="assets/img/hambursa5.jpg" class="card-img-top" alt="Hamburguesa 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Hamburguesa 3</h5>
+                    <p class="card-text">$80 MXN</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card text-dark">
+                  <img src="assets/img/hambursa6.jpg" class="card-img-top" alt="Hamburguesa 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Hamburguesa 4 </h5>
+                    <p class="card-text">$80 MXN</p>
+                  </div>
+                </div>
+              </div>
+      
+            <!-- Repite más tarjetas aquí -->
+      
+          </div>
+          <!-- Paginación -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section id="productos" class="my-5 container" data-aos="fade-up">
+        <h2 class="text-center mb-4">🌭 Hochos</h2>
+      
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+      
+            <div class="swiper-slide">
+              <div class="card text-dark">
+                <img src="assets/img/hocho regio.jpg" class="card-img-top" alt="Hamburguesa 1">
+                <div class="card-body">
+                  <h5 class="card-title">Hocho 1</h5>
+                  <p class="card-text">$70 MXN</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="swiper-slide">
+              <div class="card text-dark">
+                <img src="assets/img/hocho1.jpg" class="card-img-top" alt="Hamburguesa 2">
+                <div class="card-body">
+                  <h5 class="card-title">Hocho 2</h5>
+                  <p class="card-text">$80 MXN</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card text-dark">
+                  <img src="assets/img/hochos asar.png" class="card-img-top" alt="Hamburguesa 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Hocho 3</h5>
+                    <p class="card-text">$80 MXN</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card text-dark">
+                  <img src="assets/img/hocho6.jpg" class="card-img-top" alt="Hamburguesa 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Hocho 4</h5>
+                    <p class="card-text">$80 MXN</p>
+                  </div>
+                </div>
+              </div>
+      
+            <!-- Repite más tarjetas aquí -->
+      
+          </div>
+          <!-- Paginación -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      
+  </main>
+
+  <a href="https://wa.me/528281251704" class="btn-wsp">💬 Haz tu pedido</a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init({
+    duration: 900, // duración en milisegundos (1000ms = 1s)
+    once: false      // para que se animen solo una vez (opcional)
+  });
+  </script>
+  <!-- Antes del </body> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        576: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        992: { slidesPerView: 4 }
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      }
+    });
+  </script>
+  
+</body>
+</html>
